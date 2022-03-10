@@ -257,6 +257,6 @@
     }
   }
 
-  var ui = new UI('webeye01');
+  var ui = new UI(topic);
   await ui.connect();
 }());
