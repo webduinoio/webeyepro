@@ -1,0 +1,188 @@
+html,body {
+  font-family:'Verdana';
+  background:#333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  font-size: 20px;
+}
+
+#controller {
+  position:relative;
+  box-sizing:border-box;
+  width:100%;
+  max-width:550px;
+  padding:20px 10px;
+  margin:0 auto;
+  overflow: hidden;
+  pointer-events: auto!important;
+}
+.btn {
+  position:relative;
+  display:inline-block;
+  height:50px;
+  background:#555;
+  text-align:center;
+  line-height:60px;
+  border-radius:5px;
+  color:#fff;
+  font-size:22px;
+  vertical-align: middle;
+  cursor:pointer;
+}
+.btn:active {
+  background:#777;
+}
+
+.btn-cron {
+  color: gray;
+}
+
+.btn-cam {
+  color: gray;
+}
+
+.btn-folder {
+  color: gray;
+}
+
+.btn.btn-show{
+  background:#357;
+  width:calc(100%);
+  color:#acf;
+  margin-bottom:10px;
+  cursor:default;
+}
+
+.btn-group {
+  width:100%;
+  text-align:center;
+}
+
+.btn-group.btn-player-group{
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.btn-group.btn-player-group .btn{
+  width: 60px;
+  height:60px;
+  font-size:32px;
+  margin:15px 15px;
+  border-radius: 100%;
+}
+
+@media (max-width:480px){
+  .btn{
+    height:60px;
+    line-height:60px;
+    font-size:20px;
+  }
+    overflow:hidden;
+  }
+  .btn-group.btn-direction-group .btn{
+    height:60px;
+    line-height:60px;
+  }  
+}
+
+@media (max-width:400px){
+  .btn{
+    height:60px;
+    line-height:60px;
+    font-size:20px;
+  }  
+  .btn.btn-show {
+    width:calc(100% - 0px);
+  }
+  .btn-group.btn-direction-group .btn{
+    height:60px;
+    line-height:60px;
+  }  
+}
+
+#sweet-modal {
+  padding: 0;
+  width: 478px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  border: 0;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: transform 0.2s ease, opacity 0.2s;
+}
+
+#sweet-modal.modal-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#sweet-modal + .backdrop {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  position: relative;
+  margin: 0;
+  padding: 39px 16px 26px;
+  font-size: 27px;
+  font-weight: 600;
+  text-transform: none;
+  line-height: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-body {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 0 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  vertical-align: top;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.64);
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.modal-body p {
+  margin: 0;
+  padding: 10px;
+}
+
+.modal-footer {
+  padding: 26px 16px 13px;
+  text-align: right;
+  border-radius: inherit;
+  border-top: 1px solid rgb(233, 238, 241);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: rgb(245, 248, 250);
+  overflow: hidden;
+}
+
+#get-it {
+  padding: 10px 24px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #7cd1f9;
+  cursor: pointer;
+  outline: none;
+}
+
+#get-it:active {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, 0.29);
+  background-color: #70bce0;
+}
