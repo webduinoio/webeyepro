@@ -209,6 +209,15 @@
       //console.log("info:", this.getInfo());
     }
 
+    mqttsub_except(msg) {
+      var self = this;
+      this.show("發生錯誤，重新開機中...");
+      setTimeout(function () {
+        self.show("WebEye Pro");
+      }, 2000);
+      //console.log("info:", this.getInfo());
+    }
+
     mqttsub_setOK(info) {
       var self = this;
       if (info == 'folderId') {
